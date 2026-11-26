@@ -1,0 +1,63 @@
+:root {
+  --bg-page: #F4F4F4;
+  --card-yellow: #FCCB4D;
+  --card-text: #3B2A00;
+  --title-gold: #FFB900;
+  --btn-orange: #F85A14;
+  --btn-orange-hover: #E04B09;
+  --score-bar-bg: #D9D9D9;
+  
+  --team-blue: #00A3F5;
+  --team-red: #E81A08;
+  --team-green: #7DBA00;
+  --team-gold: #FFB900;
+  --team-purple: #7B3FE4;
+  --team-teal: #0FA3A3;
+
+  --card-radius: 18px;
+  --card-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  --font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #1A1A1A; /* Outer backdrop for letterboxing */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Accessible focus outlines */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #F85A14;
+  outline-offset: 2px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
